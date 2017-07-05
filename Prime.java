@@ -6,11 +6,11 @@ public class Prime
 public static void main(String args[])throws IOException
     {
         int s,e,i=0,j=0;
-        int count=0;
+        int count=0,flag=0;
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
       
         List<Integer>list=new ArrayList<Integer>();
-        char[] c=new char[100];
+        
        
       
         System.out.println("Enter the starting number:");
@@ -25,15 +25,15 @@ public static void main(String args[])throws IOException
              {
                  if(i%j==0)
                  {
-                     c[j]=1;
+                     flag=1;
                      break;
                  }
              
              }
-                if(c[j]==0)
+                if(flag==0)
              {
             
-                list.add(i);
+            
                 count++;
               }
        
