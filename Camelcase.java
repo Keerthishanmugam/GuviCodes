@@ -1,9 +1,11 @@
+package guvicode;
 import java.io.*;
 public class Camelcase {
 public static void main(String args[])throws IOException
 {
 	String s;
-	char c,c1;
+	char c;
+	
 	int i;
 	String[] s1;
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -13,12 +15,12 @@ public static void main(String args[])throws IOException
 	
 	for(i=0;i<s1.length;i++)
 	{
-		
-		  c=s1[i].charAt(0);
-		  c1=Character.toUpperCase(c);
-		  s1[i] = s1[i].replace(c,c1);
+		 c=s1[i].charAt(0);
+
+		  c=Character.toUpperCase(c);
 		  
-			System.out.print(s1[i]);
+		  String s2=c+s1[i].substring(1,s1[i].length());
+			System.out.print(s2);
 			if(i!=s1[i].length())
 			{
 				System.out.print(" ");
