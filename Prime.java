@@ -18,7 +18,10 @@ public class Main{
     e=Integer.parseInt(br.readLine());
     for( i=s;i>=s&&i<=e;i++)
     {
-      
+       if(i==1)
+             {
+        	 i++; 
+         }
       int m=i/2;
       for( j=2;j<m;j++)  
       {
