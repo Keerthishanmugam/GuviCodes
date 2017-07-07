@@ -7,6 +7,7 @@ public class Index {
 		System.out.println("Enter the length of the array");
 		int n=Integer.parseInt(br.readLine());
 		int[] n1=new int[n];
+		System.out.println("Enter the numbers");
 		for(i=0;i<n;i++)
 		{
 			s=Integer.parseInt(br.readLine());
