@@ -1,10 +1,12 @@
+package guvicode;
 import java.io.*;
 import java.util.*;
 public class Repeatedi {
 public static void main(String args[])throws IOException
 {
 	int i,a;
-	String s=null;
+	String s = null;
+	
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	
 	List<String>list=new ArrayList<String>();
@@ -19,8 +21,8 @@ public static void main(String args[])throws IOException
 	   list.add(s);
 	 
    }
-	if(n>1)
-	{
+   if(n>1)
+   {
    for(String s1:list)
    {
 	   a=Collections.frequency(list,s1);
@@ -35,9 +37,10 @@ public static void main(String args[])throws IOException
 	{
 	System.out.println(s2);
 	}
-	}
-	else
-	{
-		System.out.println(s);
+   }
+   else
+   {
+	   System.out.println(s);
+   }
 }
 }
