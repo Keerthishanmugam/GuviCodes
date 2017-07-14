@@ -1,3 +1,4 @@
+package proque;
 import java.util.*;
 public class Probability {
 public static void main(String args[])
@@ -8,6 +9,8 @@ public static void main(String args[])
 	int n=sc.nextInt();
 	System.out.println("Enter the divider");
 	s=sc.nextInt();
+	if(n>1)
+	{
 	for(i=1;i<n;i++)
 	{
 		if(i%s==0)
@@ -17,5 +20,10 @@ public static void main(String args[])
 		}
 	}
 	System.out.println("Numbers divided by "+s+" is "+count);
+	}
+	else
+	{
+		System.out.println("Invalid input");
+	}
 }
 }
