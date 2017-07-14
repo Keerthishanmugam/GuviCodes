@@ -1,3 +1,4 @@
+package proque;
 import java.io.*;
 import java.util.*; 
 public class Binary {
@@ -12,7 +13,8 @@ public static void main(String args[])throws IOException
 	System.out.println("Enter the number");
 	n=Integer.parseInt(br.readLine());
 	r=(int) Math.pow(2,n);
-	
+	if(n>0)
+	{
 	for(i=0;i<r;i++)
 	{
 		
@@ -30,6 +32,11 @@ public static void main(String args[])throws IOException
 	for(String x:list)
 	{
 		System.out.println(x);
+	}
+	}
+	else
+	{
+		System.out.println("Invalid Input");
 	}
 	
 }
