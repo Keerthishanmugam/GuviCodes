@@ -19,7 +19,8 @@ public static void main(String args[])
 			count++;
 		}
 	}
-	System.out.println("Numbers divided by "+s+" is "+count);
+	double s1=(double)count/(double)i;
+	System.out.println("Numbers divided by "+s+" probability is "+s1);
 	}
 	else
 	{
