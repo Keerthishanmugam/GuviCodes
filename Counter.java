@@ -6,6 +6,8 @@ public static void main(String args[])throws IOException
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	System.out.println("Enter t value");
 	t=Integer.parseInt(br.readLine());
+	if(t>0)
+	{
    for(i=0;i<=t;i++)
    {
 	   if(!(t==0))
@@ -19,5 +21,10 @@ public static void main(String args[])throws IOException
 	   t--;
 		}
    }
+	}
+	else
+	{
+		System.out.println("Invalid Input");
+	}
 }
 }
