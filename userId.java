@@ -43,7 +43,7 @@ public static void main(String args[])throws IOException
 	code=toggled.toString();
 	StringBuffer b=new StringBuffer(id);
 	idRev=b.reverse().toString();
-	userId=code+id.charAt(number)+idRev.charAt(number);
+	userId=code+id.charAt(number-1)+idRev.charAt(number-1);
 	System.out.println(userId);
 }
 }
