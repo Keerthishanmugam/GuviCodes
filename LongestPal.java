@@ -17,7 +17,7 @@ public static void main(String args[])throws IOException
 	{
 	 
 	  first=word.indexOf(word.charAt(i));
-	  occurance=word.indexOf("y",first+1);
+	  
 	  occurance=word.indexOf(word.charAt(i),first+1);
 	  if(!(occurance==-1))
 		{
