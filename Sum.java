@@ -10,7 +10,7 @@ public static void main(String args[])throws IOException
 	List<Integer>list=new ArrayList<Integer>();
 	System.out.println("Enter the word");
 	word=br.readLine();
-	//int[] number=new int[word.length()];
+	
 	for(i=0;i<word.length();i++)
 	{
 		if(word.charAt(i)>=48&&word.charAt(i)<=57)
@@ -18,10 +18,16 @@ public static void main(String args[])throws IOException
 			list.add(word.charAt(i)-48);
 		}
 	}
-	large=Collections.max(list);
-	small=Collections.min(list);
+	if(list.size()==0)
+	{
+		System.out.println("No numbers present");
+	}
+	else
+	{
 	for(int number:list)
 	{
+		large=Collections.max(list);
+		small=Collections.min(list);
 		s1=s1+number*large;
 		s2=s2+number*small;
 	}
@@ -56,5 +62,6 @@ public static void main(String args[])throws IOException
 	digit=Math.min(sum1,sum2);
 	square=(int) Math.pow(digit,2);
 	System.out.println(square);
+	}
 }
 }
