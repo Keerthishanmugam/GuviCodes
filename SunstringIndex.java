@@ -13,5 +13,8 @@ public class SubstringIndex {
         char c=sub.charAt(0);
         System.out.println(word.indexOf(c));
     }
-  }
+    else
+    {
+     System.out.println("Not a substring");
+    }
 }
