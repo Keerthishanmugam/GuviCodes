@@ -20,7 +20,7 @@ public class Tallest {
     }
     Arrays.sort(student,Collections.reverseOrder());
      
-    System.out.println("The "+num+" th tallest boy is "+student[num-1]);
+    System.out.println("The "+num+" tallest boy is "+student[num-1]);
   }
 }
 
