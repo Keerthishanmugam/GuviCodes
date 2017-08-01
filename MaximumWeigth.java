@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.Arrays;
-public class MaximumWeight {
+public class MaximumWeigth {
 public static void main(String args[])throws IOException
 {
 	String values;
