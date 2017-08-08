@@ -9,7 +9,7 @@ public static void main(String args[])throws IOException
 	List<Integer>less=new ArrayList<Integer>();
 	System.out.println("Enter the number");
      number=Integer.parseInt(br.readLine());
-     for(i=1;i<number;i++)
+     for(i=1;i<=number;i++)
      {
     	if(number%i==0)
     	{
